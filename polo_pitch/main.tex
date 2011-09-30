@@ -23,10 +23,11 @@
   %\filldraw (10.5,3.225) rectangle (10.6,3.655);
 }
 \begin{document}
+\begin{figure}
   \begin{tikzpicture}
     \pitch
 
-    % One team
+    % One team set up in zone formation
     % Goalkeeper
     \filldraw [fill=green!20,draw=green!50!black] (0.15,3.45) ellipse (0.45 and 0.1);
     % Middle zone
@@ -38,4 +39,27 @@
     % Front of zone
     \filldraw [fill=green!20,draw=green!50!black,rotate around={80:(2.2,3.45)}] (2.2,3.45) ellipse (0.45 and 0.1);
   \end{tikzpicture}
+  \caption{A basic 3 and 1 zone defence}
+\end{figure}
+
+\begin{figure}
+  \begin{tikzpicture}
+    \pitch
+
+    % One team on the goal line
+    \filldraw [fill=green!20,draw=green!50!black] (0.45,1.1) ellipse (0.45 and 0.1);
+    \filldraw [fill=green!20,draw=green!50!black] (0.45,2.2) ellipse (0.45 and 0.1);
+    \filldraw [fill=green!20,draw=green!50!black] (0.45,3.3) ellipse (0.45 and 0.1);
+    \filldraw [fill=green!20,draw=green!50!black] (0.45,4.4) ellipse (0.45 and 0.1);
+    \filldraw [fill=green!20,draw=green!50!black] (0.45,5.5) ellipse (0.45 and 0.1);
+
+    % Other team on the goal line
+    \filldraw [fill=red!20,draw=red!50!black] (10.05,1.1) ellipse (0.45 and 0.1);
+    \filldraw [fill=red!20,draw=red!50!black] (10.05,2.2) ellipse (0.45 and 0.1);
+    \filldraw [fill=red!20,draw=red!50!black] (10.05,3.3) ellipse (0.45 and 0.1);
+    \filldraw [fill=red!20,draw=red!50!black] (10.05,4.4) ellipse (0.45 and 0.1);
+    \filldraw [fill=red!20,draw=red!50!black] (10.05,5.5) ellipse (0.45 and 0.1);
+  \end{tikzpicture}
+  \caption{Lining up for the start of a half}
+\end{figure}
 \end{document}
