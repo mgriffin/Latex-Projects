@@ -1,0 +1,70 @@
+\documentclass[a4paper,addpoints,noanswers]{exam}
+
+\usepackage[margin=1in]{geometry}
+\setlength{\headsep}{10mm}
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\fancyhead{}
+\fancyhead[LO]{\color{gray} \bfseries Canoe Ireland Referee's Exam}
+\fancyhead[RO]{\color{gray} \bfseries <Place>, <Date>}
+\fancyfoot[CO]{\color{gray} Page \thepage\ of \numpages}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{teal}\normalfont\Large\bfseries}
+{\color{teal}\thesection}{1em}{}
+
+\begin{document}
+\textbf{Name:}\enspace\makebox[4in]{\color{gray}\hrulefill}
+
+\vspace{10mm}
+
+\textbf{Email:}\enspace\makebox[4in]{\color{gray}\hrulefill}
+
+\section*{Instructions}
+There are 50 questions in this exam. You have 1 hour to complete it. Please mark
+the answers clearly. These are sample questions, you didn't think I was going to
+give away the real ones did you?
+
+\section*{Questions}
+\begin{questions}
+\CorrectChoiceEmphasis{\color{red}}
+
+\question Is this the first question?
+\begin{checkboxes}
+\choice No
+\choice Maybe
+\CorrectChoice Yes
+\end{checkboxes}
+
+\question Which of these are we going to have for dinner?
+
+\begin{oneparcheckboxes}
+\CorrectChoice \includegraphics[viewport=0 0 136 114]{kitten_1.png}
+\choice \includegraphics[viewport=0 0 136 114]{kitten_2.png}
+\end{oneparcheckboxes}
+
+\question List some things.
+\begin{itemize}
+\ifprintanswers
+\color{red}
+\item Thing 1
+\item Thing 2
+\else
+\item \enspace\makebox[2in]{\hrulefill}
+\item \enspace\makebox[2in]{\hrulefill}
+\fi
+\end{itemize}
+
+\end{questions}
+\end{document}
