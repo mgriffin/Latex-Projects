@@ -1,27 +1,55 @@
-\documentclass[a4paper,11pt]{report}
+\documentclass[a4paper,oneside]{memoir}
 
 \usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
 \setlength{\parindent}{0.0in}
 \setlength{\parskip}{0.1in}
 
-\usepackage[T1]{fontenc}
-\usepackage{charter}
-
 \usepackage{graphicx}
 \usepackage{xcolor}
-
-\usepackage{titlesec}
-\titleformat{\section}
-{\color{teal}\normalfont\Large\bfseries}
-{\color{teal}\thesection}{1em}{}
+\definecolor{red}{HTML}{AD1737}
+\definecolor{chapnum}{gray}{0.6}
 
 \usepackage{hyperref}
-\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue, citecolor=blue, filecolor=blue, menucolor=blue, pagecolor=blue, urlcolor=blue} 
+\hypersetup{colorlinks=true, linkcolor=blue,  anchorcolor=blue, citecolor=blue, filecolor=blue, menucolor=blue, urlcolor=blue} 
+
+\renewcommand{\rmdefault}{pbk}
+\pagestyle{plain}
+\setcounter{secnumdepth}{0}
+
+\newfont{\chapnum}{eurb10 scaled 10000}
+\makechapterstyle{mike}{%
+  \renewcommand{\printchaptername}{}
+  \renewcommand{\chapternamenum}{}
+  \renewcommand{\printchapternum}{%
+    \marginpar{%
+      \vspace{-20pt}
+      \color{red}\chapnum \thechapter
+      \vspace{20pt}
+    }%
+  }%
+  \renewcommand{\afterchapternum}{}
+  \renewcommand{\printchaptertitle}[1]{%
+    \vspace{-140pt}
+    %\raggedright\LARGE{##1}
+  }%
+}
+
 \usepackage{wrapfig}
 
-\usepackage{verbatim}
+\newcommand{\q}[1]{``#1''}
+\newcommand{\term}[1]{\textit{{#1}}}
 
+\includeonly{%
+  %partone,%
+  %parttwo,%
+  %partthree,%
+  partfour,%
+  %partfive,%
+  %partsix,%
+  appendix%
+}
 \begin{document}
+\chapterstyle{mike}
   \include{partone}
   \include{parttwo}
   \include{partthree}
