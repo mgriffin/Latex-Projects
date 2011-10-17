@@ -1,4 +1,4 @@
-
+% Taken and modified from http://bramp.net/blog/latex-qr-based-business-card
 \documentclass[11pt,a4paper]{memoir}
 
 \setstocksize{55mm}{85mm} % UK Stock size
@@ -20,14 +20,14 @@
     %\pagecolor[cmyk]{.22,.36,.51,.08}%
     \begin{Spacing}{0.75}%
     \noindent
-    \textbf{Andrew~Brampton~Ph.D.}\\
+    \textbf{Mike~Griffin}\\
     \rule{75mm}{1mm}\\
     \begin{minipage}[t]{30mm}
         \vspace{-1mm}%
         \begin{pspicture}(30mm,30mm)
             % The MECARD format is used to exchange contact information. More information at:
             % http://www.nttdocomo.co.jp/english/service/imode/make/content/barcode/function/application/addressbook/index.html
-            \psbarcode{MECARD:N:Brampton,Andrew;EMAIL:a.bramptonATlancs.ac.uk;URL:http://bramp.net;;}{eclevel=L width=1.181 height=1.181}{qrcode}
+            \psbarcode{MECARD:N:Griffin,Mike;EMAIL:iam@mikegriffin.ie;URL:http://mikegriffin.ie;;}{eclevel=L width=1.181 height=1.181}{qrcode}
         \end{pspicture}
     \end{minipage}
     \hspace{1mm}
@@ -36,15 +36,14 @@
         \begin{flushright}
         {\scriptsize
             \begin{Spacing}{1.5}%
-%           \textbf{Research Associate}\\
-            \textbf{Network Researcher}\\
-            Computing Department\\
-            Lancaster University\vspace{9mm}\\
+            \textbf{ICT Officer}\\
+            ICT Department\\
+            National Museum of Ireland\vspace{9mm}\\
             \end{Spacing}
         }
         {\tiny
-            \textbf{email:} a.brampton AT lancs.ac.uk\\
-            \textbf{web:} http://bramp.net/\\
+            \textbf{email:} iam@mikegriffin.ie\\
+            \textbf{web:} http://mikegriffin.ie/\\
             \vspace*{2mm}
         }
         \end{flushright}
